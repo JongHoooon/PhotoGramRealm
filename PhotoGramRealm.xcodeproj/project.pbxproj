@@ -28,10 +28,11 @@
 		04BAEB342AA550D2005A3A69 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAEB332AA550D2005A3A69 /* APIService.swift */; };
 		04BAEB362AA550E9005A3A69 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAEB352AA550E9005A3A69 /* Photo.swift */; };
 		04BAEB382AA55290005A3A69 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAEB372AA55290005A3A69 /* SearchCollectionViewCell.swift */; };
-		ED0BFD272AA557C300BF1353 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0BFD262AA557C300BF1353 /* APIKey.swift */; };
 		ED0BFD2C2AA5676800BF1353 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ED0BFD2B2AA5676800BF1353 /* Realm */; };
 		ED0BFD2E2AA5676800BF1353 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED0BFD2D2AA5676800BF1353 /* RealmSwift */; };
 		ED0BFD302AA56A5300BF1353 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0BFD2F2AA56A5300BF1353 /* RealmModel.swift */; };
+		ED227AE12AA6AEEF004A6551 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ED227AE02AA6AEEF004A6551 /* .gitignore */; };
+		ED227AE32AA6AF12004A6551 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED227AE22AA6AF12004A6551 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +58,9 @@
 		04BAEB332AA550D2005A3A69 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		04BAEB352AA550E9005A3A69 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		04BAEB372AA55290005A3A69 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
-		ED0BFD262AA557C300BF1353 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		ED0BFD2F2AA56A5300BF1353 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		ED227AE02AA6AEEF004A6551 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		ED227AE22AA6AF12004A6551 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		04BAEAEC2AA4BF3F005A3A69 = {
 			isa = PBXGroup;
 			children = (
+				ED227AE02AA6AEEF004A6551 /* .gitignore */,
 				04BAEAF72AA4BF3F005A3A69 /* PhotoGramRealm */,
 				04BAEAF62AA4BF3F005A3A69 /* Products */,
 			);
@@ -199,9 +202,9 @@
 		04BAEB322AA550CC005A3A69 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				ED0BFD262AA557C300BF1353 /* APIKey.swift */,
 				04BAEB332AA550D2005A3A69 /* APIService.swift */,
 				04BAEB352AA550E9005A3A69 /* Photo.swift */,
+				ED227AE22AA6AF12004A6551 /* APIKey.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BAEB052AA4BF40005A3A69 /* LaunchScreen.storyboard in Resources */,
+				ED227AE12AA6AEEF004A6551 /* .gitignore in Resources */,
 				04BAEB022AA4BF40005A3A69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BAEB312AA550A7005A3A69 /* SearchViewController.swift in Sources */,
-				ED0BFD272AA557C300BF1353 /* APIKey.swift in Sources */,
 				04BAEB1E2AA4C090005A3A69 /* BaseTableViewCell.swift in Sources */,
 				04BAEB252AA4C0DF005A3A69 /* Constants.swift in Sources */,
 				04BAEAFD2AA4BF3F005A3A69 /* ViewController.swift in Sources */,
@@ -319,6 +322,7 @@
 				04BAEB362AA550E9005A3A69 /* Photo.swift in Sources */,
 				ED0BFD302AA56A5300BF1353 /* RealmModel.swift in Sources */,
 				04BAEB192AA4BFFB005A3A69 /* PhotoImageView.swift in Sources */,
+				ED227AE32AA6AF12004A6551 /* APIKey.swift in Sources */,
 				04BAEAFB2AA4BF3F005A3A69 /* SceneDelegate.swift in Sources */,
 				04BAEB132AA4BF8C005A3A69 /* HomeViewController.swift in Sources */,
 				04BAEB2E2AA4CA1D005A3A69 /* WriteTextField.swift in Sources */,
