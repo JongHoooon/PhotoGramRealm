@@ -11,7 +11,7 @@ import RealmSwift
 
 final class DetailViewController: BaseViewController {
     
-    let realm = try! Realm()
+    private let repository = DiaryTableRepository()
     var data: DiaryTable?
     
     let titleTextField: WriteTextField = {
@@ -39,7 +39,7 @@ final class DetailViewController: BaseViewController {
         guard let data = data else { return }
         
         titleTextField.text = data.diaryTitle
-        contentTextField.text = data.diaryContents
+        contentTextField.text = data.contents
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "수정",
@@ -54,30 +54,11 @@ final class DetailViewController: BaseViewController {
         // Realm Update
         guard let data = data else { return }
         
-        
-        
-//        let item = DiaryTable(value: [
-//            "_id": data._id,
-//            "diaryTitle": titleTextField.text ?? "",
-//            "diaryContents": contentTextField.text ?? ""
-//        ])
-        
-        do {
-            try realm.write {   // transaction
-//                realm.add(item, update: .modified)
-                realm.create(
-                    DiaryTable.self,
-                    value: [
-                        "_id": data._id,
-                        "diaryTitle": titleTextField.text ?? "",
-                        "diaryContents": contentTextField.text ?? ""
-                    ],
-                    update: .modified
-                )
-            }
-        } catch {
-            print(error)
-        }
+        repository.updateItem(
+            id: data._id,
+            title: titleTextField.text ?? "",
+            contents: contentTextField.text ?? ""
+        )
         
         navigationController?.popViewController(animated: true)
     }

@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class PhotoListTableViewCell: BaseTableViewCell {
+final class PhotoListTableViewCell: BaseTableViewCell {
     
     let diaryImageView: PhotoImageView = {
         let view = PhotoImageView(frame: .zero)

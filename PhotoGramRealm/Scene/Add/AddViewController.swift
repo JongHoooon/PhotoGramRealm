@@ -11,7 +11,9 @@ import SnapKit
 import RealmSwift
 
 class AddViewController: BaseViewController {
-     
+
+    private let repository = DiaryTableRepository()
+    
      let userImageView: PhotoImageView = {
          let view = PhotoImageView(frame: .zero)
          return view
@@ -69,7 +71,7 @@ class AddViewController: BaseViewController {
     @objc func saveButtonClicked() {
         
         // realm 파일에 접근할 수 있도록, 위치를 찾는 코드
-        let realm = try! Realm()
+
         let task = DiaryTable(
             title: titleTextField.text ?? "",
             date: Date(),
@@ -77,10 +79,7 @@ class AddViewController: BaseViewController {
             photo: fullURL
         )
         
-        try! realm.write {
-            realm.add(task)
-            print("Realm Add Succeed")
-        }
+        repository.createItem(task)
 //        realm.add(task) ==> transaction 오류 발생!!
         
         if let image = userImageView.image {

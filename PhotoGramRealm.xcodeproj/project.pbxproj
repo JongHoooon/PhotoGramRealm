@@ -35,6 +35,7 @@
 		ED227AE32AA6AF12004A6551 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED227AE22AA6AF12004A6551 /* APIKey.swift */; };
 		ED227AE52AA6CB0E004A6551 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED227AE42AA6CB0E004A6551 /* FileManager+Extension.swift */; };
 		ED227AE72AA6F24A004A6551 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED227AE62AA6F24A004A6551 /* DetailViewController.swift */; };
+		ED912BB92AA800050035DD61 /* DiaryTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED912BB82AA800050035DD61 /* DiaryTableRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		ED227AE22AA6AF12004A6551 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		ED227AE42AA6CB0E004A6551 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		ED227AE62AA6F24A004A6551 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ED912BB82AA800050035DD61 /* DiaryTableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				ED0BFD2F2AA56A5300BF1353 /* RealmModel.swift */,
+				ED912BB82AA800050035DD61 /* DiaryTableRepository.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				04BAEB362AA550E9005A3A69 /* Photo.swift in Sources */,
 				ED0BFD302AA56A5300BF1353 /* RealmModel.swift in Sources */,
 				04BAEB192AA4BFFB005A3A69 /* PhotoImageView.swift in Sources */,
+				ED912BB92AA800050035DD61 /* DiaryTableRepository.swift in Sources */,
 				ED227AE32AA6AF12004A6551 /* APIKey.swift in Sources */,
 				04BAEAFB2AA4BF3F005A3A69 /* SceneDelegate.swift in Sources */,
 				04BAEB132AA4BF8C005A3A69 /* HomeViewController.swift in Sources */,
