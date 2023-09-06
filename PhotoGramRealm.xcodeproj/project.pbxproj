@@ -33,6 +33,8 @@
 		ED0BFD302AA56A5300BF1353 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0BFD2F2AA56A5300BF1353 /* RealmModel.swift */; };
 		ED227AE12AA6AEEF004A6551 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ED227AE02AA6AEEF004A6551 /* .gitignore */; };
 		ED227AE32AA6AF12004A6551 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED227AE22AA6AF12004A6551 /* APIKey.swift */; };
+		ED227AE52AA6CB0E004A6551 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED227AE42AA6CB0E004A6551 /* FileManager+Extension.swift */; };
+		ED227AE72AA6F24A004A6551 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED227AE62AA6F24A004A6551 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		ED0BFD2F2AA56A5300BF1353 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		ED227AE02AA6AEEF004A6551 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ED227AE22AA6AF12004A6551 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		ED227AE42AA6CB0E004A6551 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		ED227AE62AA6F24A004A6551 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 		04BAEB0F2AA4BF5F005A3A69 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				ED227AE62AA6F24A004A6551 /* DetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 			children = (
 				04BAEB242AA4C0DF005A3A69 /* Constants.swift */,
 				04BAEB262AA4C106005A3A69 /* Color.swift */,
+				ED227AE42AA6CB0E004A6551 /* FileManager+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -202,9 +208,9 @@
 		04BAEB322AA550CC005A3A69 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				ED227AE22AA6AF12004A6551 /* APIKey.swift */,
 				04BAEB332AA550D2005A3A69 /* APIService.swift */,
 				04BAEB352AA550E9005A3A69 /* Photo.swift */,
-				ED227AE22AA6AF12004A6551 /* APIKey.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -313,11 +319,13 @@
 				04BAEB252AA4C0DF005A3A69 /* Constants.swift in Sources */,
 				04BAEAFD2AA4BF3F005A3A69 /* ViewController.swift in Sources */,
 				04BAEB202AA4C0A3005A3A69 /* BaseCollectionViewCell.swift in Sources */,
+				ED227AE52AA6CB0E004A6551 /* FileManager+Extension.swift in Sources */,
 				04BAEB162AA4BFD0005A3A69 /* PhotoListTableViewCell.swift in Sources */,
 				04BAEB342AA550D2005A3A69 /* APIService.swift in Sources */,
 				04BAEB272AA4C106005A3A69 /* Color.swift in Sources */,
 				04BAEB382AA55290005A3A69 /* SearchCollectionViewCell.swift in Sources */,
 				04BAEAF92AA4BF3F005A3A69 /* AppDelegate.swift in Sources */,
+				ED227AE72AA6F24A004A6551 /* DetailViewController.swift in Sources */,
 				04BAEB222AA4C0BB005A3A69 /* BaseViewController.swift in Sources */,
 				04BAEB362AA550E9005A3A69 /* Photo.swift in Sources */,
 				ED0BFD302AA56A5300BF1353 /* RealmModel.swift in Sources */,

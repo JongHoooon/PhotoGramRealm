@@ -58,6 +58,8 @@ class AddViewController: BaseViewController {
         return view
     }()
       
+    var fullURL: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad() //안하는 경우 생기는 문제
         
@@ -71,7 +73,8 @@ class AddViewController: BaseViewController {
         let task = DiaryTable(
             title: titleTextField.text ?? "",
             date: Date(),
-            contents: contentTextView.text 
+            contents: contentTextView.text,
+            photo: fullURL
         )
         
         try! realm.write {
@@ -79,6 +82,13 @@ class AddViewController: BaseViewController {
             print("Realm Add Succeed")
         }
 //        realm.add(task) ==> transaction 오류 발생!!
+        
+        if let image = userImageView.image {
+            saveImageToDocument(
+                fileName: "brick_\(task._id).jpg",
+                image: image
+            )
+        }
         
         navigationController?.popViewController(animated: true)
     }
@@ -94,6 +104,8 @@ class AddViewController: BaseViewController {
     @objc func searchWebButtonClicked() {
         let vc = SearchViewController()
         vc.didSelectItemHandler = { [weak self] value in
+            
+            self?.fullURL = value
             
             DispatchQueue.global().async {
                 if let url = URL(string: value), let data = try? Data(contentsOf: url ) {
